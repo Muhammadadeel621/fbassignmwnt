@@ -1,0 +1,185 @@
+:root {
+    --bg-color: #F0F2F5 ;
+    --white: #ffffff;
+    --green: #36A420 ;
+    --blue: #1877F2;
+} /** DEFAULT ROOT COLORS **/
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border;
+}
+
+/** STRUCTURE AREA **/
+
+/**  CONTAINER MAX WIDTH SIZE **/
+
+.container {
+    max-width: 1098px;
+    margin: 0 auto;
+}
+
+/** FACEBOOK CLASS **/
+
+.facebook {
+    /** GRID BOX **/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 155px 0;
+}
+
+/** FACEBOOK INNER CLASS LEFT **/
+
+.facebook .left {
+    margin-top: 20px;
+}
+
+/** LOGO **/
+
+.facebook .left .logo img {
+    height: 106px;
+}
+
+/** FTEXT **/
+
+.facebook .left .ftxt h2 {
+    margin-top: -18px;
+    margin-left: 30px;
+    font-weight: 300;
+    font-size: 26px;
+}
+
+/** FACEBOOK INNER CLASS RIGHT **/
+
+.facebook .right {
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/** FORM **/
+
+form {
+    max-width: 396px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1), 0 8px 16px rgba(0,0,0,0.1);
+    background-color: var(--white);
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+/** FIELDS BEFORE INPUT **/
+
+form .field {
+    margin-bottom: 10px;
+}
+
+/** INPUT **/
+
+form .field input {
+    border: 1px solid rgba(128, 128, 128, 0.315);
+    height: 50px;
+    width: 96%;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+form .field input:focus {
+    outline: 1px solid var(--blue);
+}
+
+/** BUTTON **/
+
+form .field button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--blue);
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+/** CREATE NEW ACCOUNT BUTTON **/
+
+form .create button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--green);
+    font-weight: bolder;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.forget a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.forget a:hover {
+    text-decoration: underline;
+}
+
+/** LAST A SPAN TAG **/
+
+.formP span {
+    font-size: 14px;
+}
+
+.formP span a {
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+
+.formP span a:hover {
+    text-decoration: underline;
+}
+
+/** RESPONSIVE MEDIA **/
+
+
+@media only screen and (max-width: 768px) {
+    /** REMOVE GRID ON MEDIA AS MOB **/
+
+    .facebook {
+        display: block;
+        margin: 0 auto;
+        max-width: 450px;
+        text-align: center;
+    }
+
+    .facebook .logo {
+        margin-bottom: 20px;
+    }
+
+    .facebook .ftxt {
+        margin-bottom: 30px;
+    }
+
+    .facebook .ftxt h2 {
+        font-size: 16px;
+    }
+
+
+}
